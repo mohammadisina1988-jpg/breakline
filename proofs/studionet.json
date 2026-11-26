@@ -1,0 +1,368 @@
+{
+  "network": "studionet",
+  "revision": "cb78a8a12f821c70e3e32a0b5d82102b7c6ce9a4",
+  "source_sha256": "e9eaaf7dc44bc817f1df72281c67b3c739d60cd99971aae9a267e444e3a73d16",
+  "study_id": "afcd85f298036746195b7179be0aa3acb3221d82a60e36b7d73dca8b67bd5946",
+  "transactions": [
+    {
+      "label": "deploy",
+      "sender": "0x40acbB97d32cd1De5911F1a1D8E4E090e9B48fC1",
+      "test_fee_deposit_wei": "25000000000002588",
+      "evm_hash": "0xb50ab1e134fca827716d035e86933b843aa6fada30ff2bf5daab45f4595b1ec5",
+      "hash": "0xb50ab1e134fca827716d035e86933b843aa6fada30ff2bf5daab45f4595b1ec5",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "agree": 4,
+      "votes": 5
+    },
+    {
+      "label": "publish-gistemp",
+      "sender": "0x7a59EaC570D82E65231E2dC5DB60D50BadaF56ab",
+      "test_fee_deposit_wei": "125000000000002588",
+      "evm_hash": "0xe5dc6d80040cac79cd7d9f6ad1ac3f148c13fd98872ecac6ef123084e84778f8",
+      "hash": "0xe5dc6d80040cac79cd7d9f6ad1ac3f148c13fd98872ecac6ef123084e84778f8",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "agree": 3,
+      "votes": 5,
+      "return_data": "AIQEYWZjZDg1ZjI5ODAzNjc0NjE5NWI3MTc5YmUwYWEzYWNiMzIyMWQ4MmE2MGUzNmI3ZDczZGNhOGI2N2JkNTk0Ng=="
+    },
+    {
+      "label": "repeat-publication",
+      "sender": "0xa620dA507d21D36E75C4fd21CEce5621913e013c",
+      "test_fee_deposit_wei": "125000000000002588",
+      "evm_hash": "0xc754f30a8003b0aebdf04f77e4cc8e54fe367b85e49a332bf58a3c14dc171872",
+      "hash": "0xc754f30a8003b0aebdf04f77e4cc8e54fe367b85e49a332bf58a3c14dc171872",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "agree": 3,
+      "votes": 5,
+      "return_data": "AIQEYWZjZDg1ZjI5ODAzNjc0NjE5NWI3MTc5YmUwYWEzYWNiMzIyMWQ4MmE2MGUzNmI3ZDczZGNhOGI2N2JkNTk0Ng=="
+    }
+  ],
+  "contract": "0xA45Fd551fabb0f9072a4Ba95e67791E20F5eBa8e",
+  "readback": {
+    "study": {
+      "indicator": "GISTEMP",
+      "models": [
+        {
+          "segments": [
+            {
+              "end_year": 2023,
+              "mean_centi_c": [
+                223,
+                3
+              ],
+              "start_year": 2000
+            }
+          ],
+          "squared_error_centi_c2": [
+            24538,
+            3
+          ]
+        },
+        {
+          "segments": [
+            {
+              "end_year": 2014,
+              "mean_centi_c": [
+                928,
+                15
+              ],
+              "start_year": 2000
+            },
+            {
+              "end_year": 2023,
+              "mean_centi_c": [
+                856,
+                9
+              ],
+              "start_year": 2015
+            }
+          ],
+          "squared_error_centi_c2": [
+            88318,
+            45
+          ]
+        },
+        {
+          "segments": [
+            {
+              "end_year": 2004,
+              "mean_centi_c": [
+                54,
+                1
+              ],
+              "start_year": 2000
+            },
+            {
+              "end_year": 2014,
+              "mean_centi_c": [
+                329,
+                5
+              ],
+              "start_year": 2005
+            },
+            {
+              "end_year": 2023,
+              "mean_centi_c": [
+                856,
+                9
+              ],
+              "start_year": 2015
+            }
+          ],
+          "squared_error_centi_c2": [
+            67432,
+            45
+          ]
+        },
+        {
+          "segments": [
+            {
+              "end_year": 2004,
+              "mean_centi_c": [
+                54,
+                1
+              ],
+              "start_year": 2000
+            },
+            {
+              "end_year": 2014,
+              "mean_centi_c": [
+                329,
+                5
+              ],
+              "start_year": 2005
+            },
+            {
+              "end_year": 2018,
+              "mean_centi_c": [
+                367,
+                4
+              ],
+              "start_year": 2015
+            },
+            {
+              "end_year": 2023,
+              "mean_centi_c": [
+                489,
+                5
+              ],
+              "start_year": 2019
+            }
+          ],
+          "squared_error_centi_c2": [
+            28343,
+            20
+          ]
+        }
+      ],
+      "observations": [
+        [
+          2000,
+          39
+        ],
+        [
+          2001,
+          53
+        ],
+        [
+          2002,
+          63
+        ],
+        [
+          2003,
+          62
+        ],
+        [
+          2004,
+          53
+        ],
+        [
+          2005,
+          68
+        ],
+        [
+          2006,
+          64
+        ],
+        [
+          2007,
+          66
+        ],
+        [
+          2008,
+          54
+        ],
+        [
+          2009,
+          66
+        ],
+        [
+          2010,
+          72
+        ],
+        [
+          2011,
+          61
+        ],
+        [
+          2012,
+          65
+        ],
+        [
+          2013,
+          67
+        ],
+        [
+          2014,
+          75
+        ],
+        [
+          2015,
+          90
+        ],
+        [
+          2016,
+          101
+        ],
+        [
+          2017,
+          91
+        ],
+        [
+          2018,
+          85
+        ],
+        [
+          2019,
+          98
+        ],
+        [
+          2020,
+          100
+        ],
+        [
+          2021,
+          85
+        ],
+        [
+          2022,
+          89
+        ],
+        [
+          2023,
+          117
+        ]
+      ],
+      "source": "https://raw.githubusercontent.com/datasets/global-temp/b90e8a349acb508d382d40d1cfa393c723bd82ef/data/annual.csv"
+    },
+    "selections": [
+      {
+        "penalty_centi_c2": 0,
+        "selected": {
+          "score_centi_c2": [
+            28343,
+            20
+          ],
+          "segment_count": 4,
+          "segments": [
+            {
+              "end_year": 2004,
+              "mean_centi_c": [
+                54,
+                1
+              ],
+              "start_year": 2000
+            },
+            {
+              "end_year": 2014,
+              "mean_centi_c": [
+                329,
+                5
+              ],
+              "start_year": 2005
+            },
+            {
+              "end_year": 2018,
+              "mean_centi_c": [
+                367,
+                4
+              ],
+              "start_year": 2015
+            },
+            {
+              "end_year": 2023,
+              "mean_centi_c": [
+                489,
+                5
+              ],
+              "start_year": 2019
+            }
+          ],
+          "squared_error_centi_c2": [
+            28343,
+            20
+          ]
+        }
+      },
+      {
+        "penalty_centi_c2": 1000,
+        "selected": {
+          "score_centi_c2": [
+            133318,
+            45
+          ],
+          "segment_count": 2,
+          "segments": [
+            {
+              "end_year": 2014,
+              "mean_centi_c": [
+                928,
+                15
+              ],
+              "start_year": 2000
+            },
+            {
+              "end_year": 2023,
+              "mean_centi_c": [
+                856,
+                9
+              ],
+              "start_year": 2015
+            }
+          ],
+          "squared_error_centi_c2": [
+            88318,
+            45
+          ]
+        }
+      },
+      {
+        "penalty_centi_c2": 1000000,
+        "selected": {
+          "score_centi_c2": [
+            24538,
+            3
+          ],
+          "segment_count": 1,
+          "segments": [
+            {
+              "end_year": 2023,
+              "mean_centi_c": [
+                223,
+                3
+              ],
+              "start_year": 2000
+            }
+          ],
+          "squared_error_centi_c2": [
+            24538,
+            3
+          ]
+        }
+      }
+    ]
+  }
+}

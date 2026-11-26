@@ -2,7 +2,7 @@
 
 Breakline publishes exact change-point fits for independently observed annual data. One observation produces four onchain models, so readers can change the complexity penalty without acquiring the data again.
 
-[Contract source](contracts/breakline.py) · [Public data fixture](fixtures/global-temp-annual.csv) · [Direct tests](tests/direct/test_breakline.py)
+[Contract source](contracts/breakline.py) · [Public data fixture](fixtures/global-temp-annual.csv) · [StudioNet proof](#studionet-proof) · [Submission text](SUBMISSION.md)
 
 ## From observations to change points
 
@@ -36,3 +36,20 @@ python -m pytest tests/direct -q
 ```
 
 Direct tests check all four optimal models against exhaustive enumeration, compare changed verifier input, and reject incomplete or malformed data.
+
+## StudioNet proof
+
+Two finalized publications returned the same study ID. Read-only replay checks the deployed bytes, all three finalized receipts, all four fitted models, and the readbacks for three complexity penalties.
+
+| Penalty per cut in squared hundredths of a degree | Selected segments | Years starting a new segment |
+| ---: | ---: | --- |
+| 0 | 4 | 2005, 2015, 2019 |
+| 1,000 | 2 | 2015 |
+| 1,000,000 | 1 | |
+
+[Deployed contract](https://explorer-studio.genlayer.com/address/0xA45Fd551fabb0f9072a4Ba95e67791E20F5eBa8e) · [Proof ledger](proofs/studionet.json) · [GenVM checks](https://github.com/mohammadisina1988-jpg/breakline/actions/runs/45766380817)
+
+```sh
+npm ci
+npm run verify
+```
